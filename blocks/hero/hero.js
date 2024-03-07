@@ -8,4 +8,8 @@ export default function decorate(block) {
   heroP.classList.add('heroP');
   heroP.innerHTML = 'Subheading · All Breakpoints';
   heroH.after(heroP);
+  var heroButton = document.createElement('button');
+  heroButton.classList.add('heroButton');
+  heroButton.innerHTML = 'Button';
+  heroP.after(heroButton);
 }
