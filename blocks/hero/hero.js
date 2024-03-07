@@ -3,5 +3,4 @@ export default function decorate(block) {
   overlayDiv.classList.add('overlay');
   var heroDiv = document.querySelector('.hero');
   heroDiv.appendChild(overlayDiv);
-  console.log(heroDiv);
 }
