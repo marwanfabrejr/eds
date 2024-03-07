@@ -7,12 +7,5 @@ export default function decorate(block) {
   var heroP = document.createElement('p');
   overlayDiv.classList.add('heroP');
   heroP.innerHTML = 'Subheading · All Breakpoints';
-  var nextSibling = heroH.nextSibling;
-  if (nextSibling) {
-    referenceElement.parentNode.insertBefore(heroP, nextSibling);
-    console.log(heroDiv);
-  } else {
-    referenceElement.parentNode.appendChild(heroP);
-    console.log(heroDiv);
-  }
+  heroH.after(heroP);
 }
