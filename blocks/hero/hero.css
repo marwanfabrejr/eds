@@ -9,7 +9,6 @@ main .hero-container {
 .hero {
   position: relative;
   height: 375px;
-
 }
 
 .hero h1 {
@@ -34,7 +33,8 @@ main .hero-container {
 }
 
 .hero .overlay {
-  width: 200px;
-  height: 200px;
-  background-color: black;
+  position: absolute;
+  inset: 0px;
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 10;
 }
