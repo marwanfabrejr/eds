@@ -33,7 +33,7 @@ main .hero-container {
   height: 100%;
 }
 
-.overlay {
+.hero .overlay {
   width: 200px;
   height: 200px;
   background-color: black;
