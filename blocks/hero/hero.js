@@ -5,7 +5,7 @@ export default function decorate(block) {
   heroDiv.appendChild(overlayDiv);
   var heroH = document.getElementById('this-is-a-headline');
   var heroP = document.createElement('p');
-  overlayDiv.classList.add('heroP');
+  heroP.classList.add('heroP');
   heroP.innerHTML = 'Subheading · All Breakpoints';
   heroH.after(heroP);
 }
