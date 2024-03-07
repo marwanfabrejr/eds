@@ -50,3 +50,13 @@ main .hero-container {
   background: rgba(0, 0, 0, 0.50);
   z-index: 10;
 }
+
+.hero .heroP {
+  color: white;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
