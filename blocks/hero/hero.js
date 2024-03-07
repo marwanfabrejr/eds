@@ -1,3 +1,5 @@
 export default function decorate(block) {
-  console.log('hello');
+  const overlay = document.createElement('div');
+  const heroDiv = document.getElementsByClassName('hero');
+  console.log(heroDiv);
 }
