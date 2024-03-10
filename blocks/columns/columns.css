@@ -41,7 +41,6 @@
 .columnWrapper {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-
 }
 
 .columnWrapper .desc {
@@ -108,4 +107,11 @@
   position: absolute !important;
   left: 15px !important;
   top: 15px !important;
+  border: 1px solid #fff;
+}
+
+.imageWrapper [title="Button"]:hover {
+  color: #fff !important;
+  background: #000 !important;
+  text-decoration: none;
 }
