@@ -25,20 +25,7 @@ export default function decorate(block) {
   var grandParentDiv = parentDiv.parentElement;
   grandParentDiv.classList.add('columnWrapper');
   var buttonElement = document.querySelector('[title="Button"]');
-  var buttonParent = buttonElement.parentElement;
-  buttonParent.classList.add('imageWrapper');
-  var header1 = document.getElementById('header-1');
-  var previousElement = header1.previousElementSibling;
-  previousElement.classList.add('subtitle');
-  var nextElement = header1.nextElementSibling;
-  nextElement.classList.add('paragraph');
-  var parentDiv = header1.parentElement;
-  parentDiv.classList.add('desc');
-  var grandParentDiv = parentDiv.parentElement;
-  grandParentDiv.classList.add('columnWrapper');
-  var buttonElement = document.querySelector('[title="Button"]');
-  var buttonParent = buttonElement.parentElement;
-  buttonParent.classList.add('imageWrapper');
   buttonElement.classList.add('btn');
-  console.log(buttonElement);
+  var buttonParent = buttonElement.parentElement;
+  buttonParent.classList.add('imageWrapper');
 }

@@ -86,9 +86,8 @@
 
 }
 
-.columnWrapper .imageWrapper {
+.imageWrapper {
   position: relative !important;
-
 }
 
 .imageWrapper [title="Button"] {
