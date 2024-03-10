@@ -14,6 +14,19 @@ footer .footer p {
 }
 
 .footer-wrapper {
-  background-color: #000;
+  background-color: #000 !important;
   color: #6F6F6F !important;
+}
+
+.default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper a:any-link {
+  color: #6F6F6F !important;
+}
+
+.footer-wrapper a:any-link:hover {
+  text-decoration: none;
 }
