@@ -91,7 +91,7 @@
 
 }
 
-.btn {
+.columnWrapper .imageWrapper .btn {
   display: flex !important;
   padding: 8px 16px !important;
   justify-content: center !important;

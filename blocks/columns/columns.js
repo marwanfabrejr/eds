@@ -40,4 +40,5 @@ export default function decorate(block) {
   var buttonParent = buttonElement.parentElement;
   buttonParent.classList.add('imageWrapper');
   buttonElement.classList.add('btn');
+  console.log(buttonElement);
 }
