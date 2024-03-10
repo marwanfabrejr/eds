@@ -34,3 +34,17 @@ footer .footer p {
 .footer-wrapper a:any-link:hover {
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .default-content-wrapper {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .default-content-wrapper {
+    font-size: 12px;
+    gap: 10px !important;
+  }
+}

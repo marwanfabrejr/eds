@@ -93,3 +93,32 @@ main .hero-container {
 .hero-container {
   overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    height: 603px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    padding-bottom: 8px;
+  }
+
+  .hero .heroP {
+    padding-bottom: 12px;
+    text-align: center;
+  }
+
+  .hero .heroButton {
+    margin: 0px auto;
+    font-size: 14px;
+    padding: 8px 26px;
+  }
+}

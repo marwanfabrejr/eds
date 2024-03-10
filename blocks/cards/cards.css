@@ -39,3 +39,10 @@
   line-height: 24px !important;
   letter-spacing: 0.25px !important;
 }
+
+@media screen and (max-width: 768px) {
+  .cards>ul {
+    grid-template-columns: 1fr !important;
+    gap: 35px !important;
+  }
+}
