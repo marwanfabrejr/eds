@@ -12,4 +12,6 @@ export default function decorate(block) {
   heroButton.classList.add('heroButton');
   heroButton.innerHTML = 'Button';
   heroP.after(heroButton);
+  var mainElement = document.querySelector('main');
+  mainElement.lastElementChild.remove();
 }

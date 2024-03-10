@@ -12,3 +12,8 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+.footer-wrapper {
+  background-color: #000;
+  color: #6F6F6F !important;
+}

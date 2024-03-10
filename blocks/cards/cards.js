@@ -9,7 +9,11 @@ export default function decorate(block) {
     [...li.children].forEach((div) => {
       if (div.children.length === 1 && div.querySelector('picture'))
         div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+      else {
+        div.className = 'cards-card-body';
+        div.firstElementChild.classList.add('header');
+        div.lastElementChild.classList.add('paragraph');
+      }
     });
     ul.append(li);
   });
@@ -22,9 +26,9 @@ export default function decorate(block) {
   );
   block.textContent = '';
   block.append(ul);
-  var descWrapper = document.querySelector('.cards-card-body');
-  var header = descWrapper.firstElementChild;
-  header.classList.add('header');
-  var paragraph = descWrapper.lastElementChild;
-  paragraph.classList.add('paragraph');
+  // var descWrapper = document.querySelector('.cards-card-body');
+  // var header = descWrapper.firstElementChild;
+  // header.classList.add('header');
+  // var paragraph = descWrapper.lastElementChild;
+  // paragraph.classList.add('paragraph');
 }
