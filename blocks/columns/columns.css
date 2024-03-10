@@ -1,4 +1,4 @@
-.columns > div {
+.columns>div {
   display: flex;
   flex-direction: column;
 }
@@ -7,27 +7,106 @@
   width: 100%;
 }
 
-.columns > div > div {
+.columns>div>div {
   order: 1;
 }
 
-.columns > div > .columns-img-col {
+.columns>div>.columns-img-col {
   order: 0;
 }
 
-.columns > div > .columns-img-col img {
+.columns>div>.columns-img-col img {
   display: block;
 }
 
-@media (width >= 900px) {
-  .columns > div {
+@media (width >=900px) {
+  .columns>div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    gap: 0px;
   }
 
-  .columns > div > div {
+  .columns>div>div {
     flex: 1;
     order: unset;
   }
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.columnWrapper {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+
+}
+
+.columnWrapper .desc {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 15px !important;
+  border-bottom: 4px solid #383838 !important;
+  padding: 0px 25px;
+  position: relative;
+  bottom: 2px;
+}
+
+.columnWrapper .subtitle {
+  margin: 0 !important;
+  color: #6F6F6F !important;
+  font-family: Helvetica !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.columnWrapper #header,
+.columnWrapper #header-1 {
+  margin: 0 !important;
+  color: #000;
+}
+
+.columnWrapper .paragraph {
+  margin: 0 !important;
+  color: #6F6F6F !important;
+  font-family: Helvetica !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.25px !important;
+
+}
+
+.columnWrapper .imageWrapper {
+  position: relative !important;
+
+}
+
+.btn {
+  display: flex !important;
+  padding: 8px 16px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #FFF !important;
+  width: fit-content !important;
+  color: #000 !important;
+  text-align: center !important;
+  font-family: Helvetica !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.5px !important;
+  position: absolute !important;
+  left: 15px !important;
+  top: 15px !important;
 }
