@@ -91,7 +91,7 @@
 
 }
 
-.columnWrapper .imageWrapper .btn {
+.imageWrapper [title="Button"] {
   display: flex !important;
   padding: 8px 16px !important;
   justify-content: center !important;
