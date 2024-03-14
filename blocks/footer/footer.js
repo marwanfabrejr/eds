@@ -18,4 +18,13 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  // Select the outer div with class 'footer'
+  var footerDiv = document.querySelector('.footer');
+
+  // Assuming you want to add the class to the first child div directly under the footer div
+  var childDiv = footerDiv.children[0];
+
+  // Add the 'footerWrapper' class to this div
+  childDiv.classList.add('footerWrapper');
 }

@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  padding: 24px 0px;
 }
 
 header nav {
@@ -146,8 +147,9 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+  width: 68px;
+  height: 40px;
+  cursor: pointer;
 }
 
 /* sections */
@@ -275,4 +277,80 @@ header nav .nav-tools {
 
 .nav-brand p {
   white-space: nowrap;
+}
+
+.nav-brand div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-brand .button-container a,
+.nav-brand a[title="Nav Item"] {
+  margin: 0px;
+  color: #383838;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  background: #fff;
+  padding: 0px;
+  text-decoration: none;
+  border: 0;
+  display: block;
+}
+
+.nav-sections div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.nav-sections img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav-sections .button-container a {
+  margin: 0px;
+  background: #fff;
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #000;
+  border-radius: 0px;
+  color: #383838;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.nav-sections .button-container a:hover {
+  background: #383838;
+  color: #fff;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-wrapper {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-brand p {
+    display: none !important;
+  }
 }

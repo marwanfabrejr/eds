@@ -32,70 +32,47 @@
   }
 }
 
-.columns {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+.columns-container .default-content-wrapper h1 {
+  margin: 0px !important;
+  width: 100% !important;
+  text-align: center !important;
+  color: #3E3E3E !important;
+  font-family: Helvetica !important;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 40px !important;
+  letter-spacing: 0.25px !important;
+  margin-bottom: 16px !important;
 }
 
-.columnWrapper {
+.cardsband {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 24px !important;
 }
 
-.columnWrapper .desc {
-  height: 100% !important;
+.cardsband .cardContainer {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
   align-items: flex-start !important;
-  gap: 15px !important;
-  border-bottom: 4px solid #383838 !important;
-  padding: 0px 25px;
-  position: relative;
-  bottom: 2px;
 }
 
-.columnWrapper .subtitle {
-  margin: 0 !important;
-  color: #6F6F6F !important;
-  font-family: Helvetica !important;
-  font-size: 14px !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  line-height: 20px !important;
-  letter-spacing: 0.5px !important;
-}
-
-.columnWrapper #header,
-.columnWrapper #header-1 {
-  margin: 0 !important;
-  color: #000;
-}
-
-.columnWrapper .paragraph {
-  margin: 0 !important;
-  color: #6F6F6F !important;
-  font-family: Helvetica !important;
-  font-size: 16px !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  line-height: 24px !important;
-  letter-spacing: 0.25px !important;
-
-}
-
-.imageWrapper {
+.cardsband .cardContainer .imageContainer {
   position: relative !important;
+  width: 100% !important;
 }
 
-.imageWrapper [title="Button"] {
+.cardsband .cardContainer .imageContainer p {
+  margin: 0px !important;
+}
+
+.cardsband .cardContainer .imageContainer .button-container a {
+  margin: 0px !important;
   display: flex !important;
   padding: 8px 16px !important;
   justify-content: center !important;
   align-items: center !important;
-  background: #FFF !important;
-  width: fit-content !important;
   color: #000 !important;
   text-align: center !important;
   font-family: Helvetica !important;
@@ -104,32 +81,309 @@
   font-weight: 400 !important;
   line-height: 20px !important;
   letter-spacing: 0.5px !important;
+  background-color: #fff !important;
+  width: fit-content !important;
+  border-radius: 0px !important;
   position: absolute !important;
-  left: 15px !important;
   top: 15px !important;
-  border: 1px solid #fff;
+  left: 15px !important;
 }
 
-.imageWrapper [title="Button"]:hover {
+.cardsband .cardContainer .contentContainer {
+  display: flex !important;
+  padding: 16px 24px 24px 24px !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+  align-self: stretch !important;
+  background: #FFF !important;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cardsband .cardContainer .contentContainer p {
+  margin: 0px !important;
+  color: #6F6F6F !important;
+  font-family: Helvetica !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.5px !important;
+  width: 100% !important;
+}
+
+.cardsband .cardContainer .contentContainer h2 {
+  margin: 0px !important;
+  color: #383838 !important;
+  font-family: Helvetica !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 28px !important;
+  letter-spacing: 0.25px !important;
+  margin-bottom: 8px !important;
+}
+
+.cardsband .cardContainer .contentContainer .button-container a {
+  margin: 0px !important;
+  display: flex !important;
+  padding: 12px 40px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: #383838 !important;
+  border-radius: 0px !important;
+  color: #FFF !important;
+  text-align: center !important;
+  font-family: Helvetica !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.25px !important;
+  border: 1px solid #383838;
+}
+
+.cardsband .cardContainer .contentContainer .button-container a:hover {
+  background: #fff !important;
+  color: #383838 !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 300ms !important;
+}
+
+.columns-container .button-container {
+  margin: auto !important;
+}
+
+.columns-container .button-container a[title="View All >"] {
+  margin: 0 !important;
+  margin-top: 16px !important;
+  background: #fff !important;
+  color: #383838 !important;
+  font-family: Helvetica !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.25px !important;
+  display: flex !important;
+  padding: 12px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.feature .imageContainer p,
+.feature .imageContainer h1,
+.feature .imageContainer a {
+  margin: 0px !important;
+}
+
+.feature .imageContainer {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 48px !important;
+  background: #FFF !important;
+}
+
+.feature .imageContainer .columns-img-col {
+  padding: 35px !important;
+}
+
+.feature .content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+  padding: 24px !important;
+}
+
+.feature .content h1 {
+  color: #383838 !important;
+  font-family: Helvetica !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+  letter-spacing: 0.25px !important;
+}
+
+.feature .content .featureP {
+  color: #6F6F6F !important;
+  font-family: Helvetica !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.25px !important;
+}
+
+.feature .content .button-container {
+  margin-top: 16px !important;
+}
+
+.feature .content .button-container a {
+  display: flex !important;
+  padding: 12px 40px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border: 2px solid #383838 !important;
+  color: #383838 !important;
+  text-align: center !important;
+  font-family: Helvetica !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.25px !important;
+  background: #fff !important;
+  border-radius: 0px !important;
+}
+
+.feature .content .button-container a:hover {
+  background: #383838 !important;
   color: #fff !important;
-  background: #000 !important;
-  text-decoration: none;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 300ms !important;
+}
+
+.accordion .accordionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 0px;
+}
+
+.accordion .accordionContainer .question {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.accordion .accordionContainer .question>h2:first-child {
+  margin: 0px;
+  padding: 16px 0px;
+  color: var(--Neutral-Black, #000);
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  border: 0;
+}
+
+.accordion .accordionContainer .question>h2:last-child {
+  margin: 0px;
+  padding: 16px 0px;
+  font-family: Helvetica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  border: 0;
+  color: #383838;
+}
+
+.accordion .accordionContainer .answer {
+  display: block;
+  margin: 0px;
+  padding: 16px 0px;
+  color: #6F6F6F;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  width: 100%;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-top: 1px solid #ccc;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category h3,
+.category p {
+  margin: 0px
+}
+
+.category .categoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: max-content;
+}
+
+.category .categoryContainer h3 {
+  color: var(--Neutral-Black, #000);
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.category .categoryContainer .categoryP {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  color: #6F6F6F;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 @media screen and (max-width: 768px) {
-  .columnWrapper {
+  .cardsband {
     grid-template-columns: 1fr !important;
-    gap: 25px !important;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .feature .imageContainer {
+    grid-template-columns: 1fr !important;
   }
 
-  .columnWrapper .desc {
-    bottom: 0px !important;
-    border-bottom: 0px !important;
+  .category {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .category .categoryContainer {
+    margin: 0 auto;
+  }
+
+  .category h3,
+  .category p {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .feature .imageContainer .columns-img-col {
     padding: 0px !important;
-    order: 0 !important;
-  }
-
-  .columns-img-col {
-    order: 1 !important;
   }
 }

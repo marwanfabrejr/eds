@@ -242,3 +242,9 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+@media screen and (max-width: 768px) {
+  main .section {
+    padding: 32px 32px;
+  }
+}
