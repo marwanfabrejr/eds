@@ -1,14 +1,8 @@
 {
-  "properties": {
-    "liveHost": {
-      "type": "string",
-      "format": "idn-hostname",
-      "description": "The host name of the live environment (defaults to *.hlx.live)"
-    },
-    "host": {
-      "type": "string",
-      "format": "idn-hostname",
-      "description": "http://marwanzayed.me/"
+  "project": {
+    "name": "Your Project Name",
+    "domains": {
+      "production": "www.marwanzayedas.com"
     }
   }
 }
