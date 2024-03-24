@@ -1,8 +1,1 @@
-{
-  "liveHost": {
-    "type": "string",
-    "format": "idn-hostname",
-    "host": "www.mydomainsss.prod",
-    "description": "The host name of the live environment (defaults to *.hlx.live)"
-  }
-}
+{}
