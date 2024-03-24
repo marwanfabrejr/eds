@@ -1,8 +1,5 @@
 {
-  "liveHost": {
-    "type": "string",
-    "format": "idn-hostname",
-    "host": "www.mydomainosj.prod",
-    "description": "The host name of the live environment (defaults to *.hlx.live)"
-  }
+  "project": "My Project",
+  "host": "www.mydomain.prod",
+  "plugins": []
 }
