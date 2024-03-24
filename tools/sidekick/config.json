@@ -1,8 +1,5 @@
 {
-  "project": {
-    "name": "Your Project Name",
-    "domains": {
-      "production": "www.marwanzayedas.com"
-    }
-  }
+  "project": "Home | AEM Blue Holding",
+  "host": "einfluencers.me",
+  "plugins": []
 }
