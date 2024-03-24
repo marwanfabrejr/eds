@@ -1,5 +1,14 @@
 {
-  "project": "My Project",
-  "host": "www.mydomain.prod",
-  "plugins": []
+  "properties": {
+    "liveHost": {
+      "type": "string",
+      "format": "idn-hostname",
+      "description": "http://marwanzayed.me/"
+    },
+    "host": {
+      "type": "string",
+      "format": "idn-hostname",
+      "description": "The host name of the production website"
+    }
+  }
 }
