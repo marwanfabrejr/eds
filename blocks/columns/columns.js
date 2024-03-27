@@ -86,7 +86,7 @@ export default function decorate(block) {
           secondH2.textContent = '-';
           if (answerDiv.style.display === 'none') {
             answerDiv.style.display = 'block';
-          }
+          } else answerDiv.style.display = 'none';
         });
       });
 
