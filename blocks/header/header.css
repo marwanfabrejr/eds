@@ -10,8 +10,7 @@ header .nav-wrapper {
 header nav {
   box-sizing: border-box;
   display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height) 'sections sections sections' 1fr / auto 1fr auto;
+  grid-template: 'hamburger brand tools' var(--nav-height) 'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 2em;
   margin: auto;
@@ -21,7 +20,7 @@ header nav {
   font-family: var(--body-font-family);
 }
 
-header nav[aria-expanded="true"] {
+header nav[aria-expanded='true'] {
   grid-template:
     'hamburger brand' var(--nav-height) 'sections sections' 1fr
     'tools tools' var(--nav-height) / auto 1fr;
@@ -41,7 +40,7 @@ header nav[aria-expanded="true"] {
     justify-content: space-between;
   }
 
-  header nav[aria-expanded="true"] {
+  header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
   }
@@ -93,28 +92,28 @@ header nav .nav-hamburger-icon::after {
   background: currentcolor;
 }
 
-header nav[aria-expanded="false"] .nav-hamburger-icon,
-header nav[aria-expanded="false"] .nav-hamburger-icon::before,
-header nav[aria-expanded="false"] .nav-hamburger-icon::after {
+header nav[aria-expanded='false'] .nav-hamburger-icon,
+header nav[aria-expanded='false'] .nav-hamburger-icon::before,
+header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   height: 2px;
   border-radius: 2px;
   background: currentcolor;
 }
 
-header nav[aria-expanded="false"] .nav-hamburger-icon::before {
+header nav[aria-expanded='false'] .nav-hamburger-icon::before {
   top: -6px;
 }
 
-header nav[aria-expanded="false"] .nav-hamburger-icon::after {
+header nav[aria-expanded='false'] .nav-hamburger-icon::after {
   top: 6px;
 }
 
-header nav[aria-expanded="true"] .nav-hamburger-icon {
+header nav[aria-expanded='true'] .nav-hamburger-icon {
   height: 22px;
 }
 
-header nav[aria-expanded="true"] .nav-hamburger-icon::before,
-header nav[aria-expanded="true"] .nav-hamburger-icon::after {
+header nav[aria-expanded='true'] .nav-hamburger-icon::before,
+header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   top: 3px;
   left: 1px;
   transform: rotate(45deg);
@@ -124,7 +123,7 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
   border-radius: 2px;
 }
 
-header nav[aria-expanded="true"] .nav-hamburger-icon::after {
+header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   top: unset;
   bottom: 3px;
   transform: rotate(-45deg);
@@ -161,7 +160,7 @@ header nav .nav-sections {
   background-color: var(--overlay-color);
 }
 
-header nav[aria-expanded="true"] .nav-sections {
+header nav[aria-expanded='true'] .nav-sections {
   display: block;
   visibility: visible;
   align-self: start;
@@ -174,15 +173,15 @@ header nav .nav-sections ul {
   font-weight: 500;
 }
 
-header nav .nav-sections ul>li {
+header nav .nav-sections ul > li {
   font-weight: 700;
 }
 
-header nav .nav-sections ul>li>ul {
+header nav .nav-sections ul > li > ul {
   margin-top: 0;
 }
 
-header nav .nav-sections ul>li>ul>li {
+header nav .nav-sections ul > li > ul > li {
   font-weight: 500;
 }
 
@@ -193,7 +192,7 @@ header nav .nav-sections ul>li>ul>li {
     white-space: nowrap;
   }
 
-  header nav[aria-expanded="true"] .nav-sections {
+  header nav[aria-expanded='true'] .nav-sections {
     align-self: unset;
   }
 
@@ -207,7 +206,7 @@ header nav .nav-sections ul>li>ul>li {
     content: '';
     display: inline-block;
     position: absolute;
-    top: .5em;
+    top: 0.5em;
     right: 2px;
     transform: rotate(135deg);
     width: 6px;
@@ -217,9 +216,9 @@ header nav .nav-sections ul>li>ul>li {
     border-width: 2px 2px 0 0;
   }
 
-  header nav .nav-sections .nav-drop[aria-expanded="true"]::after {
+  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
     top: unset;
-    bottom: .5em;
+    bottom: 0.5em;
     transform: rotate(315deg);
   }
 
@@ -231,18 +230,24 @@ header nav .nav-sections ul>li>ul>li {
     justify-content: flex-end;
   }
 
-  header nav .nav-sections .default-content-wrapper>ul>li {
+  header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
   }
 
-  header nav .nav-sections .default-content-wrapper>ul>li>ul {
+  header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
     position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper>ul>li[aria-expanded="true"]>ul {
+  header
+    nav
+    .nav-sections
+    .default-content-wrapper
+    > ul
+    > li[aria-expanded='true']
+    > ul {
     display: block;
     position: absolute;
     left: -1em;
@@ -253,7 +258,7 @@ header nav .nav-sections ul>li>ul>li {
     white-space: initial;
   }
 
-  header nav .nav-sections .default-content-wrapper>ul>li>ul::before {
+  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     content: '';
     position: absolute;
     top: -8px;
@@ -265,7 +270,7 @@ header nav .nav-sections ul>li>ul>li {
     border-bottom: 8px solid var(--light-color);
   }
 
-  header nav .nav-sections .default-content-wrapper>ul>li>ul>li {
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
   }
 }
@@ -286,7 +291,7 @@ header nav .nav-tools {
 }
 
 .nav-brand .button-container a,
-.nav-brand a[title="Nav Item"] {
+.nav-brand a[title='Nav Item'] {
   margin: 0px;
   color: #383838;
   font-family: Helvetica;
@@ -302,6 +307,10 @@ header nav .nav-tools {
   display: block;
 }
 
+.nav-brand .button-container a u,
+.nav-brand a[title='Nav Item'] u {
+  text-decoration: none;
+}
 .nav-sections div {
   display: flex;
   align-items: center;
@@ -338,7 +347,9 @@ header nav .nav-tools {
 .nav-sections .button-container a:hover {
   background: #383838;
   color: #fff;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
